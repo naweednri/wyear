@@ -1,11 +1,9 @@
 #include <ctime>
 #include <iostream>
 #include <string>
-#include <chrono>
 
 using namespace std;
 
-using day=std::chrono::day;
 
 void getWeekOfYear(std::time_t time)
 {
@@ -50,7 +48,6 @@ two option:
 
 int main()
 {
-    cout<<std::chrono::system_clock::now()<<std::endl;
     cout<<"[This app get you week of year]\nPress enter to use current time\nOtherwise use this format to enter your date: yyyy/mm/dd \n";
     Option();
 
