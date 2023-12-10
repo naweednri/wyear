@@ -9,7 +9,7 @@ void getWeekOfYear(std::time_t time)
 {
     char timeString[std::size("ww")];
     strftime(std::data(timeString), std::size(timeString),
-                "%W", std::gmtime(&time));
+                "%W", std::localtime(&time));
     cout << timeString << '\n';
 }
 
